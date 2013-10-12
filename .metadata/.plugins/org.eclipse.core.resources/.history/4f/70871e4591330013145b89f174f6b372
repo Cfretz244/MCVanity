@@ -54,10 +54,10 @@ public final class Vanity extends JavaPlugin {
 		Color[][] pixelData = new Color[img.getWidth()][img.getHeight()];
 		for(int i = 0; i < img.getWidth(); i++) {
 			for(int k = 0; k < img.getHeight(); k++) {
-				pixelData[i][k] = new Color(img.getRGB(i, k));	
+				Color c = new Color(img.getRGB(i, k));
+				
 			}
 		}
-		
 	}
 	
 	public BufferedImage resizeImage(BufferedImage img, int newWidth, int newHeight) {

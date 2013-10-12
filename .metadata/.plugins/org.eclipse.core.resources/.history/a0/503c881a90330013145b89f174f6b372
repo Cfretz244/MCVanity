@@ -1,6 +1,5 @@
 package com.gmail.cfretz244;
 
-import java.awt.Color;
 import java.awt.Graphics2D;
 import java.awt.image.BufferedImage;
 import java.io.File;
@@ -36,7 +35,7 @@ public final class Vanity extends JavaPlugin {
 					try {
 						BufferedImage img = ImageIO.read(new File(url.toString()));
 						img = resizeImage(img, width, height);
-						int[][] woolColors = processImage(img);
+						
 					} catch(IOException e) {
 						//do something
 					}
@@ -50,22 +49,13 @@ public final class Vanity extends JavaPlugin {
 		return false;
 	}
 	
-	public int[][] processImage(BufferedImage img) {
-		Color[][] pixelData = new Color[img.getWidth()][img.getHeight()];
-		for(int i = 0; i < img.getWidth(); i++) {
-			for(int k = 0; k < img.getHeight(); k++) {
-				pixelData[i][k] = new Color(img.getRGB(i, k));	
-			}
-		}
-		
-	}
-	
 	public BufferedImage resizeImage(BufferedImage img, int newWidth, int newHeight) {
 		int type = img.getType();
 		BufferedImage resizedImage = new BufferedImage(150, newHeight, type);
 		Graphics2D g = resizedImage.createGraphics();
 		g.drawImage(img, 0, 0, 150, newHeight, null);
 		g.dispose();
+	 
 		return resizedImage;
 	}
 	
