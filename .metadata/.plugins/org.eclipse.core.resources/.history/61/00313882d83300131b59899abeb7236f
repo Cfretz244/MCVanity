@@ -57,7 +57,7 @@ public final class Vanity extends JavaPlugin {
 					height = Integer.parseInt(args[2]);
 				}
 				try {
-					URL url = new URL("https://scontent-a-lga.xx.fbcdn.net/hphotos-ash3/1234554_10151663409294037_1614676655_n.jpg");
+					URL url = new URL("http://bluelobsterart.com/wordpress/wp-content/uploads/2009/03/cmyk-color-wheel-lg.jpg");
 					img = ImageIO.read(url);
 				} catch(IOException e) {
 					player.sendMessage("Terribly sorry, but an error has occured. Perhaps the image does not exist?");

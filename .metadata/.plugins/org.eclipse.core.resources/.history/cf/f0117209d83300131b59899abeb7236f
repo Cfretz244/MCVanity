@@ -57,7 +57,7 @@ public final class Vanity extends JavaPlugin {
 					height = Integer.parseInt(args[2]);
 				}
 				try {
-					URL url = new URL("https://scontent-a-lga.xx.fbcdn.net/hphotos-ash3/1234554_10151663409294037_1614676655_n.jpg");
+					URL url = new URL("http://bluelobsterart.com/wordpress/wp-content/uploads/2009/03/cmyk-color-wheel-lg.jpg");
 					img = ImageIO.read(url);
 				} catch(IOException e) {
 					player.sendMessage("Terribly sorry, but an error has occured. Perhaps the image does not exist?");
@@ -101,7 +101,7 @@ public final class Vanity extends JavaPlugin {
 					pixelData[i][k] = 2;
 				} else if((r >= 0 && r <= 80) && (g >= 0 && g <= 80) && (b >= 0 && b <= 80)) {
 					pixelData[i][k] = 3;
-				} else if((r >= 115 && r <= 245) && (g >= 10 && g <= 100) && (b >= 10 && b <= 100)) {
+				} else if((r >= 115 && r <= 255) && (g >= 10 && g <= 100) && (b >= 10 && b <= 100)) {
 					pixelData[i][k] = 4;
 				} else if((r >= 175 && r <= 265) && (g >= 80 && g <= 170) && (b >= 15 && b <= 105)) {
 					pixelData[i][k] = 5;
