@@ -4,9 +4,13 @@ import java.awt.Color;
 import java.awt.Graphics2D;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
+import java.io.InputStream;
 import java.net.URL;
 
 import javax.imageio.ImageIO;
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.parsers.ParserConfigurationException;
 
 import org.bukkit.Location;
 import org.bukkit.Material;
@@ -17,6 +21,10 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.bukkit.material.MaterialData;
 import org.bukkit.plugin.java.JavaPlugin;
+import org.w3c.dom.Document;
+import org.w3c.dom.Node;
+import org.w3c.dom.NodeList;
+import org.xml.sax.SAXException;
 
 public final class Vanity extends JavaPlugin {
 	
@@ -34,30 +42,48 @@ public final class Vanity extends JavaPlugin {
 		if(cmd.getName().equalsIgnoreCase("vanity")) {
 			if(sender instanceof Player) {
 				Player player = (Player)sender;
-				World world = player.getWorld();
-				int width = 150, height = 150;
-				Location loc;
-				loc = player.getLocation();
-//				if(args[0].equals("here")) {
-//					loc = player.getLocation();
-//				} else if(args[0].equals("there")) {
-//					loc = player.getTargetBlock(null, 200).getLocation();
-//				} else {
-//					loc = player.getLocation();
-//					double x = loc.getX();
-//					double y = loc.getY();
-//					double z = loc.getZ();
-//					loc = new Location(world, x - 1, y, z - 1);
-//				}
-				width = Integer.parseInt(args[0]);
-				height = Integer.parseInt(args[1]);
-				BufferedImage img;
-				if(args.length == 3) {
+				String urlString = null;
+				int width = 200, height = 200;
+				if(args.length == 0) {
+					player.sendMessage("You must input some parameters.");
+					return false;
+				} else if(args.length == 1) {
+					boolean urlPresent = false;
+					try {
+						Integer.parseInt(args[0]);
+					} catch(Exception e) {
+						urlPresent = true;
+						urlString = args[0];
+					}
+					if(!urlPresent) {
+						player.sendMessage("You must include a url");
+						return false;
+					}
+				} else if(args.length == 2) {
+					urlString = args[0];
+				}	else if(args.length == 3) {
+					boolean isWellFormatted = true;
+					try {
+						Integer.parseInt(args[0]);
+						isWellFormatted = false;
+					} catch(Exception e) {
+						urlString = args[0];
+					}
+					try {
+						width = Integer.parseInt(args[1]);
+						height = Integer.parseInt(args[2]);
+					} catch(Exception e) {
+						isWellFormatted = false;
+					}
+				} else if(args.length == 4) {
+					urlString = args[0];
 					width = Integer.parseInt(args[1]);
 					height = Integer.parseInt(args[2]);
 				}
+				Location loc = player.getLocation();
+				BufferedImage img;
 				try {
-					URL url = new URL("https://scontent-a-lga.xx.fbcdn.net/hphotos-ash3/1234554_10151663409294037_1614676655_n.jpg");
+					URL url = new URL(urlString);
 					img = ImageIO.read(url);
 				} catch(IOException e) {
 					player.sendMessage("Terribly sorry, but an error has occured. Perhaps the image does not exist?");
@@ -66,9 +92,18 @@ public final class Vanity extends JavaPlugin {
 					player.sendMessage("Terribly sorry, but an error has occurred");
 					return false;
 				}
-				img = resizeImage(img, width, height);
+				if(args.length == 3) {
+					img = resizeImage(img, width, height, false);
+				} else {
+					img = resizeImage(img, width, height, true);
+				}
+				
 				int[][] woolColors = processImage(img);
-				writeBlocks(woolColors, loc);
+				if(args[args.length - 1].equals("-h")) {
+					writeBlocksHorizontally(woolColors, loc);
+				} else {
+					writeBlocksVertically(woolColors, loc);
+				}
 			}
 		} else {
 			sender.sendMessage("Wrong command");
@@ -76,7 +111,12 @@ public final class Vanity extends JavaPlugin {
 		return false;
 	}
 	
-	public BufferedImage resizeImage(BufferedImage img, int newWidth, int newHeight) {
+	public BufferedImage resizeImage(BufferedImage img, int newWidth, int newHeight, boolean keepRatio) {
+		if(keepRatio) {
+			int oldHeight = img.getHeight(), oldWidth = img.getWidth();
+			double ratio = oldHeight / (double)oldWidth;
+			newHeight = (int)(ratio * newWidth);
+		}
 		int type = img.getType();
 		BufferedImage resizedImage = new BufferedImage(newWidth, newHeight, type);
 		Graphics2D g = resizedImage.createGraphics();
@@ -134,15 +174,15 @@ public final class Vanity extends JavaPlugin {
 		return pixelData;
 	}
 	
-	public void writeBlocks(int[][] woolColors, Location loc) {
+	public void writeBlocksVertically(int[][] woolColors, Location loc) {
 		Location currentLoc = new Location(loc.getWorld(), loc.getX(), loc.getY() + woolColors[0].length, loc.getZ());
-		for(int i = 0; i < woolColors.length; i++) {
-			for(int k = 0; k < woolColors[i].length; k++) {
+		for(int i = 0; i < woolColors[0].length; i++) {
+			for(int k = 0; k < woolColors.length; k++) {
 				currentLoc = new Location(currentLoc.getWorld(), currentLoc.getX(), currentLoc.getY(), currentLoc.getZ() + 1);
 				BlockState blockState = currentLoc.getBlock().getState();
 				blockState.setType(Material.WOOL);
 				byte color = 0000;
-				int woolColor = woolColors[i][k];
+				int woolColor = woolColors[k][i];
 				if(woolColor == 0) {
 					color = 0;
 				} else if(woolColor == 1) {
@@ -183,7 +223,60 @@ public final class Vanity extends JavaPlugin {
 				blockState.setData(data);
 				blockState.update(true);
 			}
-			currentLoc = new Location(currentLoc.getWorld(), currentLoc.getX(), currentLoc.getY() - 1, currentLoc.getZ() - woolColors[0].length);
+			currentLoc = new Location(currentLoc.getWorld(), currentLoc.getX(), currentLoc.getY() - 1, currentLoc.getZ() - woolColors.length);
+		}
+	}
+	
+	public void writeBlocksHorizontally(int[][] woolColors, Location loc) {
+		Location currentLoc = new Location(loc.getWorld(), loc.getX() + woolColors[0].length, loc.getY(), loc.getZ());
+		for(int i = 0; i < woolColors[0].length; i++) {
+			for(int k = 0; k < woolColors.length; k++) {
+				currentLoc = new Location(currentLoc.getWorld(), currentLoc.getX(), currentLoc.getY(), currentLoc.getZ() + 1);
+				BlockState blockState = currentLoc.getBlock().getState();
+				blockState.setType(Material.WOOL);
+				byte color = 0000;
+				int woolColor = woolColors[k][i];
+				if(woolColor == 0) {
+					color = 0;
+				} else if(woolColor == 1) {
+					color = 8;
+				} else if(woolColor == 2) {
+					color = 7;
+				} else if(woolColor == 3) {
+					color = 15;
+				} else if(woolColor == 4) {
+					color = 14;
+				} else if(woolColor == 5) {
+					color = 1;
+				} else if(woolColor == 6) {
+					color = 4;
+				} else if(woolColor == 7) {
+					color = 5;
+				} else if(woolColor == 8) {
+					color = 13;
+				} else if(woolColor == 9) {
+					color = 3;
+				} else if(woolColor == 10) {
+					color = 9;
+				} else if(woolColor == 11) {
+					color = 11;
+				} else if(woolColor == 12) {
+					color = 10;
+				} else if(woolColor == 13) {
+					color = 2;
+				} else if(woolColor == 14) {
+					color = 6;
+				} else if(woolColor == 15) {
+					color = 12;
+				} else {
+					color = 8;
+				}
+				MaterialData data = blockState.getData();
+				data.setData(color);
+				blockState.setData(data);
+				blockState.update(true);
+			}
+			currentLoc = new Location(currentLoc.getWorld(), currentLoc.getX() - 1, currentLoc.getY(), currentLoc.getZ() - woolColors.length);
 		}
 	}
 	
