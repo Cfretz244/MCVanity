@@ -3,9 +3,8 @@ package com.gmail.cfretz244;
 import java.awt.Color;
 import java.awt.Graphics2D;
 import java.awt.image.BufferedImage;
-import java.io.File;
 import java.io.IOException;
-import java.net.URL;
+import java.io.InputStream;
 
 import javax.imageio.ImageIO;
 
@@ -31,13 +30,15 @@ public final class Vanity extends JavaPlugin {
 			if(sender instanceof Player) {
 				if(args.length == 2) {
 					Player player = (Player)sender;
-					URL url = Vanity.class.getClassLoader().getResource("/pic.jpg");
 					int width = Integer.parseInt(args[0]), height = Integer.parseInt(args[1]);
 					try {
-						BufferedImage img = ImageIO.read(new File(url.toString()));
+						InputStream stream = this.getClass().getResourceAsStream("/pic.jpg");
+						BufferedImage img = ImageIO.read(stream);
 						img = resizeImage(img, width, height);
 						int[][] woolColors = processImage(img);
 					} catch(IOException e) {
+						//do something
+					} catch(Exception e) {
 						//do something
 					}
 				} else {
@@ -58,13 +59,14 @@ public final class Vanity extends JavaPlugin {
 			}
 		}
 		
+		return null;
 	}
 	
 	public BufferedImage resizeImage(BufferedImage img, int newWidth, int newHeight) {
 		int type = img.getType();
-		BufferedImage resizedImage = new BufferedImage(150, newHeight, type);
+		BufferedImage resizedImage = new BufferedImage(newWidth, newHeight, type);
 		Graphics2D g = resizedImage.createGraphics();
-		g.drawImage(img, 0, 0, 150, newHeight, null);
+		g.drawImage(img, 0, 0, newWidth, newHeight, null);
 		g.dispose();
 		return resizedImage;
 	}

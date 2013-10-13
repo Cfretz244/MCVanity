@@ -1,0 +1,75 @@
+package com.gmail.cfretz244;
+
+import java.awt.Color;
+import java.awt.Graphics2D;
+import java.awt.image.BufferedImage;
+import java.io.IOException;
+import java.io.InputStream;
+
+import javax.imageio.ImageIO;
+
+import org.bukkit.command.Command;
+import org.bukkit.command.CommandSender;
+import org.bukkit.entity.Player;
+import org.bukkit.plugin.java.JavaPlugin;
+
+public final class Vanity extends JavaPlugin {
+	
+	@Override
+	public void onEnable() {
+		//Do something awesome
+	}
+	
+	@Override
+	public void onDisable() {
+		
+	}
+	
+	public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
+		if(cmd.getName().equalsIgnoreCase("vanity")) {
+			if(sender instanceof Player) {
+				if(args.length == 2) {
+					Player player = (Player)sender;
+					int width = Integer.parseInt(args[0]), height = Integer.parseInt(args[1]);
+					try {
+						InputStream stream = this.getClass().getResourceAsStream("pic.jpg");
+						BufferedImage img = ImageIO.read(stream);
+						img = resizeImage(img, width, height);
+						int[][] woolColors = processImage(img);
+					} catch(IOException e) {
+						//do something
+					} catch(Exception e) {
+						//do something
+					}
+				} else {
+					sender.sendMessage("Wrong number of parameters");
+				}
+			}
+		} else {
+			sender.sendMessage("Wrong command");
+		}
+		return false;
+	}
+	
+	public int[][] processImage(BufferedImage img) {
+		Color[][] pixelData = new Color[img.getWidth()][img.getHeight()];
+		for(int i = 0; i < img.getWidth(); i++) {
+			for(int k = 0; k < img.getHeight(); k++) {
+				pixelData[i][k] = new Color(img.getRGB(i, k));	
+			}
+		}
+		
+		return null;
+	}
+	
+	public BufferedImage resizeImage(BufferedImage img, int newWidth, int newHeight) {
+		int type = img.getType();
+		BufferedImage resizedImage = new BufferedImage(150, newHeight, type);
+		Graphics2D g = resizedImage.createGraphics();
+		g.drawImage(img, 0, 0, 150, newHeight, null);
+		g.dispose();
+		return resizedImage;
+	}
+	
+	
+}

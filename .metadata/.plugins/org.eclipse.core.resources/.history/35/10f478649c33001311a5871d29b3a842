@@ -1,0 +1,45 @@
+---- Minecraft Crash Report ----
+// Hi. I'm Minecraft, and I'm a crashaholic.
+
+Time: 10/12/13 7:18 PM
+Description: Exception in server tick loop
+
+java.lang.NullPointerException
+	at org.bukkit.craftbukkit.v1_6_R3.util.Versioning.getBukkitVersion(Versioning.java:14)
+	at org.bukkit.craftbukkit.v1_6_R3.CraftServer.<init>(CraftServer.java:138)
+	at net.minecraft.server.v1_6_R3.PlayerList.<init>(PlayerList.java:56)
+	at net.minecraft.server.v1_6_R3.DedicatedPlayerList.<init>(SourceFile:11)
+	at net.minecraft.server.v1_6_R3.DedicatedServer.init(DedicatedServer.java:107)
+	at net.minecraft.server.v1_6_R3.MinecraftServer.run(MinecraftServer.java:393)
+	at net.minecraft.server.v1_6_R3.ThreadServerApplication.run(SourceFile:583)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- System Details --
+Details:
+	Minecraft Version: 1.6.4
+	Operating System: Mac OS X (x86_64) version 10.8.5
+	Java Version: 1.7.0_17, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 61619816 bytes (58 MB) / 75759616 bytes (72 MB) up to 1124073472 bytes (1072 MB)
+	JVM Flags: 1 total; -Xbootclasspath/a:/Users/cfretz/git/hackRUFall2013/Vanity/dist/craftbukkit.jar:/Users/cfretz/git/hackRUFall2013/Vanity/dist/minecraft_server.jar
+	AABB Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	Suspicious classes: ~~ERROR~~ NullPointerException: null
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	CraftBukkit Information: 
+   Running: 
+   Failed to handle CraftCrashReport:
+java.lang.NullPointerException
+	at org.bukkit.Bukkit.getName(Bukkit.java:72)
+	at org.bukkit.craftbukkit.v1_6_R3.CraftCrashReport.call(CraftCrashReport.java:20)
+	at net.minecraft.server.v1_6_R3.CrashReportSystemDetails.a(SourceFile:74)
+	at net.minecraft.server.v1_6_R3.CrashReport.h(CrashReport.java:41)
+	at net.minecraft.server.v1_6_R3.CrashReport.<init>(CrashReport.java:28)
+	at net.minecraft.server.v1_6_R3.MinecraftServer.run(MinecraftServer.java:438)
+	at net.minecraft.server.v1_6_R3.ThreadServerApplication.run(SourceFile:583)
+
+	Profiler Position: N/A (disabled)
+	Is Modded: Definitely; Server brand changed to 'craftbukkit'
+	Type: Dedicated Server (map_server.txt)

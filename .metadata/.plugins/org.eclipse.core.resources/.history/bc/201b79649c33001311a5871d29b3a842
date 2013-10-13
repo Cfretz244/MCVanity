@@ -1,0 +1,59 @@
+2013-10-12 19:07:32 [INFO] Starting minecraft server version 1.6.4
+2013-10-12 19:07:32 [INFO] Loading properties
+2013-10-12 19:07:32 [WARNING] server.properties does not exist
+2013-10-12 19:07:32 [INFO] Generating new properties file
+2013-10-12 19:07:32 [INFO] Default game type: SURVIVAL
+2013-10-12 19:07:32 [INFO] Generating keypair
+2013-10-12 19:07:33 [INFO] Starting Minecraft server on *:25565
+2013-10-12 19:07:33 [WARNING] **** FAILED TO BIND TO PORT!
+2013-10-12 19:07:33 [WARNING] The exception was: java.net.BindException: Address already in use
+2013-10-12 19:07:33 [WARNING] Perhaps a server is already running on that port?
+2013-10-12 19:07:46 [INFO] Stopping server
+2013-10-12 19:07:49 [INFO] Starting minecraft server version 1.6.4
+2013-10-12 19:07:49 [INFO] Loading properties
+2013-10-12 19:07:49 [INFO] Default game type: SURVIVAL
+2013-10-12 19:07:49 [INFO] Generating keypair
+2013-10-12 19:07:50 [INFO] Starting Minecraft server on *:25565
+2013-10-12 19:07:50 [SEVERE] java.lang.NullPointerException
+2013-10-12 19:07:50 [SEVERE] 	at org.bukkit.craftbukkit.v1_6_R3.util.Versioning.getBukkitVersion(Versioning.java:14)
+2013-10-12 19:07:50 [SEVERE] 	at org.bukkit.craftbukkit.v1_6_R3.CraftServer.<init>(CraftServer.java:138)
+2013-10-12 19:07:50 [SEVERE] 	at net.minecraft.server.v1_6_R3.PlayerList.<init>(PlayerList.java:56)
+2013-10-12 19:07:50 [SEVERE] 	at net.minecraft.server.v1_6_R3.DedicatedPlayerList.<init>(SourceFile:11)
+2013-10-12 19:07:50 [SEVERE] 	at net.minecraft.server.v1_6_R3.DedicatedServer.init(DedicatedServer.java:107)
+2013-10-12 19:07:50 [SEVERE] 	at net.minecraft.server.v1_6_R3.MinecraftServer.run(MinecraftServer.java:393)
+2013-10-12 19:07:50 [SEVERE] 	at net.minecraft.server.v1_6_R3.ThreadServerApplication.run(SourceFile:583)
+2013-10-12 19:07:50 [SEVERE] Encountered an unexpected exception NullPointerException
+java.lang.NullPointerException
+	at org.bukkit.craftbukkit.v1_6_R3.util.Versioning.getBukkitVersion(Versioning.java:14)
+	at org.bukkit.craftbukkit.v1_6_R3.CraftServer.<init>(CraftServer.java:138)
+	at net.minecraft.server.v1_6_R3.PlayerList.<init>(PlayerList.java:56)
+	at net.minecraft.server.v1_6_R3.DedicatedPlayerList.<init>(SourceFile:11)
+	at net.minecraft.server.v1_6_R3.DedicatedServer.init(DedicatedServer.java:107)
+	at net.minecraft.server.v1_6_R3.MinecraftServer.run(MinecraftServer.java:393)
+	at net.minecraft.server.v1_6_R3.ThreadServerApplication.run(SourceFile:583)
+2013-10-12 19:07:50 [SEVERE] This crash report has been saved to: /Users/cfretz/git/hackRUFall2013/Vanity/dist/./crash-reports/crash-2013-10-12_19.07.50-server.txt
+2013-10-12 19:14:58 [INFO] Stopping server
+2013-10-12 19:18:09 [INFO] Starting minecraft server version 1.6.4
+2013-10-12 19:18:09 [INFO] Loading properties
+2013-10-12 19:18:09 [INFO] Default game type: SURVIVAL
+2013-10-12 19:18:09 [INFO] Generating keypair
+2013-10-12 19:18:09 [INFO] Starting Minecraft server on *:25565
+2013-10-12 19:18:10 [SEVERE] java.lang.NullPointerException
+2013-10-12 19:18:10 [SEVERE] 	at org.bukkit.craftbukkit.v1_6_R3.util.Versioning.getBukkitVersion(Versioning.java:14)
+2013-10-12 19:18:10 [SEVERE] 	at org.bukkit.craftbukkit.v1_6_R3.CraftServer.<init>(CraftServer.java:138)
+2013-10-12 19:18:10 [SEVERE] 	at net.minecraft.server.v1_6_R3.PlayerList.<init>(PlayerList.java:56)
+2013-10-12 19:18:10 [SEVERE] 	at net.minecraft.server.v1_6_R3.DedicatedPlayerList.<init>(SourceFile:11)
+2013-10-12 19:18:10 [SEVERE] 	at net.minecraft.server.v1_6_R3.DedicatedServer.init(DedicatedServer.java:107)
+2013-10-12 19:18:10 [SEVERE] 	at net.minecraft.server.v1_6_R3.MinecraftServer.run(MinecraftServer.java:393)
+2013-10-12 19:18:10 [SEVERE] 	at net.minecraft.server.v1_6_R3.ThreadServerApplication.run(SourceFile:583)
+2013-10-12 19:18:10 [SEVERE] Encountered an unexpected exception NullPointerException
+java.lang.NullPointerException
+	at org.bukkit.craftbukkit.v1_6_R3.util.Versioning.getBukkitVersion(Versioning.java:14)
+	at org.bukkit.craftbukkit.v1_6_R3.CraftServer.<init>(CraftServer.java:138)
+	at net.minecraft.server.v1_6_R3.PlayerList.<init>(PlayerList.java:56)
+	at net.minecraft.server.v1_6_R3.DedicatedPlayerList.<init>(SourceFile:11)
+	at net.minecraft.server.v1_6_R3.DedicatedServer.init(DedicatedServer.java:107)
+	at net.minecraft.server.v1_6_R3.MinecraftServer.run(MinecraftServer.java:393)
+	at net.minecraft.server.v1_6_R3.ThreadServerApplication.run(SourceFile:583)
+2013-10-12 19:18:10 [SEVERE] This crash report has been saved to: /Users/cfretz/git/hackRUFall2013/Vanity/dist/./crash-reports/crash-2013-10-12_19.18.10-server.txt
+2013-10-12 19:49:33 [INFO] Stopping server

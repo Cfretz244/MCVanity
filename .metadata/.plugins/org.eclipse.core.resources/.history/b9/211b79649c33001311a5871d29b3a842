@@ -1,0 +1,75 @@
+2013-10-12 19:08:37 [INFO] Starting minecraft server version 1.6.4
+2013-10-12 19:08:37 [INFO] Loading properties
+2013-10-12 19:08:37 [INFO] Default game type: SURVIVAL
+2013-10-12 19:08:37 [INFO] Generating keypair
+2013-10-12 19:08:37 [INFO] Starting Minecraft server on *:25565
+2013-10-12 19:08:37 [WARNING] **** FAILED TO BIND TO PORT!
+2013-10-12 19:08:37 [WARNING] The exception was: java.net.BindException: Address already in use
+2013-10-12 19:08:37 [WARNING] Perhaps a server is already running on that port?
+2013-10-12 19:08:59 [SEVERE] java.lang.NullPointerException
+2013-10-12 19:08:59 [SEVERE] 	at net.minecraft.server.v1_6_R3.DedicatedServer.as(DedicatedServer.java:259)
+2013-10-12 19:08:59 [SEVERE] 	at net.minecraft.server.v1_6_R3.DedicatedServer.a(DedicatedServer.java:205)
+2013-10-12 19:08:59 [SEVERE] 	at net.minecraft.server.v1_6_R3.MinecraftServer.run(MinecraftServer.java:428)
+2013-10-12 19:08:59 [SEVERE] 	at net.minecraft.server.v1_6_R3.ThreadServerApplication.run(SourceFile:583)
+2013-10-12 19:08:59 [SEVERE] Encountered an unexpected exception NullPointerException
+java.lang.NullPointerException
+	at net.minecraft.server.v1_6_R3.DedicatedServer.as(DedicatedServer.java:259)
+	at net.minecraft.server.v1_6_R3.DedicatedServer.a(DedicatedServer.java:205)
+	at net.minecraft.server.v1_6_R3.MinecraftServer.run(MinecraftServer.java:428)
+	at net.minecraft.server.v1_6_R3.ThreadServerApplication.run(SourceFile:583)
+2013-10-12 19:08:59 [SEVERE] This crash report has been saved to: /Users/cfretz/git/hackRUFall2013/Vanity/dist/./crash-reports/crash-2013-10-12_19.08.59-server.txt
+2013-10-12 19:09:04 [INFO] Stopping server
+2013-10-12 19:09:44 [INFO] Starting minecraft server version 1.6.4
+2013-10-12 19:09:44 [INFO] Loading properties
+2013-10-12 19:09:44 [INFO] Default game type: SURVIVAL
+2013-10-12 19:09:44 [INFO] Generating keypair
+2013-10-12 19:09:44 [INFO] Starting Minecraft server on *:25565
+2013-10-12 19:09:44 [WARNING] **** FAILED TO BIND TO PORT!
+2013-10-12 19:09:44 [WARNING] The exception was: java.net.BindException: Address already in use
+2013-10-12 19:09:44 [WARNING] Perhaps a server is already running on that port?
+2013-10-12 19:09:54 [INFO] Stopping server
+2013-10-12 19:12:42 [INFO] Starting minecraft server version 1.6.4
+2013-10-12 19:12:42 [INFO] Loading properties
+2013-10-12 19:12:42 [INFO] Default game type: SURVIVAL
+2013-10-12 19:12:42 [INFO] Generating keypair
+2013-10-12 19:12:42 [INFO] Starting Minecraft server on *:25565
+2013-10-12 19:12:42 [WARNING] **** FAILED TO BIND TO PORT!
+2013-10-12 19:12:42 [WARNING] The exception was: java.net.BindException: Address already in use
+2013-10-12 19:12:42 [WARNING] Perhaps a server is already running on that port?
+2013-10-12 19:12:57 [SEVERE] java.lang.NullPointerException
+2013-10-12 19:12:57 [SEVERE] 	at net.minecraft.server.v1_6_R3.DedicatedServer.as(DedicatedServer.java:259)
+2013-10-12 19:12:57 [SEVERE] 	at net.minecraft.server.v1_6_R3.DedicatedServer.a(DedicatedServer.java:205)
+2013-10-12 19:12:57 [SEVERE] 	at net.minecraft.server.v1_6_R3.MinecraftServer.run(MinecraftServer.java:428)
+2013-10-12 19:12:57 [SEVERE] 	at net.minecraft.server.v1_6_R3.ThreadServerApplication.run(SourceFile:583)
+2013-10-12 19:12:57 [SEVERE] Encountered an unexpected exception NullPointerException
+java.lang.NullPointerException
+	at net.minecraft.server.v1_6_R3.DedicatedServer.as(DedicatedServer.java:259)
+	at net.minecraft.server.v1_6_R3.DedicatedServer.a(DedicatedServer.java:205)
+	at net.minecraft.server.v1_6_R3.MinecraftServer.run(MinecraftServer.java:428)
+	at net.minecraft.server.v1_6_R3.ThreadServerApplication.run(SourceFile:583)
+2013-10-12 19:12:57 [SEVERE] This crash report has been saved to: /Users/cfretz/git/hackRUFall2013/Vanity/dist/./crash-reports/crash-2013-10-12_19.12.57-server.txt
+2013-10-12 19:13:09 [INFO] Stopping server
+2013-10-12 19:14:26 [INFO] Starting minecraft server version 1.6.4
+2013-10-12 19:14:26 [INFO] Loading properties
+2013-10-12 19:14:26 [INFO] Default game type: SURVIVAL
+2013-10-12 19:14:26 [INFO] Generating keypair
+2013-10-12 19:14:26 [INFO] Starting Minecraft server on *:25565
+2013-10-12 19:14:26 [WARNING] **** FAILED TO BIND TO PORT!
+2013-10-12 19:14:26 [WARNING] The exception was: java.net.BindException: Address already in use
+2013-10-12 19:14:26 [WARNING] Perhaps a server is already running on that port?
+2013-10-12 19:20:26 [INFO] Starting minecraft server version 1.6.2
+2013-10-12 19:20:26 [INFO] Loading properties
+2013-10-12 19:20:26 [INFO] Default game type: SURVIVAL
+2013-10-12 19:20:26 [INFO] Generating keypair
+2013-10-12 19:20:26 [INFO] Starting Minecraft server on *:25565
+2013-10-12 19:20:26 [WARNING] **** FAILED TO BIND TO PORT!
+2013-10-12 19:20:26 [WARNING] The exception was: java.net.BindException: Address already in use
+2013-10-12 19:20:26 [WARNING] Perhaps a server is already running on that port?
+2013-10-12 19:20:58 [INFO] Starting minecraft server version 1.6.2
+2013-10-12 19:20:58 [INFO] Loading properties
+2013-10-12 19:20:58 [INFO] Default game type: SURVIVAL
+2013-10-12 19:20:58 [INFO] Generating keypair
+2013-10-12 19:20:58 [INFO] Starting Minecraft server on *:25565
+2013-10-12 19:20:58 [WARNING] **** FAILED TO BIND TO PORT!
+2013-10-12 19:20:58 [WARNING] The exception was: java.net.BindException: Address already in use
+2013-10-12 19:20:58 [WARNING] Perhaps a server is already running on that port?
