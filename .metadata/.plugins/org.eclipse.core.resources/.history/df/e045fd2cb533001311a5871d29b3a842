@@ -97,7 +97,7 @@ public final class Vanity extends JavaPlugin {
 			}
 		}
 		
-		return pixelData;
+		return null;
 	}
 	
 	public BufferedImage resizeImage(BufferedImage img, int newWidth, int newHeight) {

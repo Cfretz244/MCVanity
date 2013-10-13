@@ -75,29 +75,11 @@ public final class Vanity extends JavaPlugin {
 					pixelData[i][k] = 6;
 				} else if((r >= 40 && r <= 90) && (g >= 150 && g <= 200) && (b >= 35 && b <= 85)) {
 					pixelData[i][k] = 7;
-				} else if((r >= 35 && r <= 85) && (g >= 55 && g <= 105) && (b >= 5 && b <= 55)) {
-					pixelData[i][k] = 8;
-				} else if((r >= 65 && r <= 115) && (g >= 100 && g <= 150) && (b >= 170 && b <= 220)) {
-					pixelData[i][k] = 9;
-				} else if((r >= 25 && r <= 75) && (g >= 90 && g <= 140) && (b >= 115 && b <= 165)) {
-					pixelData[i][k] = 10;
-				} else if((r >= 20 && r <= 70) && (g >= 30 && g <= 80) && (b >= 110 && b <= 160)) {
-					pixelData[i][k] = 11;
-				} else if((r >= 95 && r <= 145) && (g >= 35 && g <= 85) && (b >= 155 && b <= 205)) {
-					pixelData[i][k] = 12;
-				} else if((r >= 150 && r <= 200) && (g >= 45 && g <= 95) && (b >= 160 && b <= 210)) {
-					pixelData[i][k] = 13;
-				} else if((r >= 185 && r <= 235) && (g >= 115 && g <= 165) && (b >= 135 && b <= 185)) {
-					pixelData[i][k] = 14;
-				} else if((r >= 50 && r <= 100) && (g >= 25 && g <= 75) && (b >= 5 && b <= 5)) {
-					pixelData[i][k] = 15;
-				} else {
-					pixelData[i][k] = -1;
 				}
 			}
 		}
 		
-		return pixelData;
+		return null;
 	}
 	
 	public BufferedImage resizeImage(BufferedImage img, int newWidth, int newHeight) {

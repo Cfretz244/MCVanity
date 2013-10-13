@@ -86,18 +86,12 @@ public final class Vanity extends JavaPlugin {
 				} else if((r >= 95 && r <= 145) && (g >= 35 && g <= 85) && (b >= 155 && b <= 205)) {
 					pixelData[i][k] = 12;
 				} else if((r >= 150 && r <= 200) && (g >= 45 && g <= 95) && (b >= 160 && b <= 210)) {
-					pixelData[i][k] = 13;
-				} else if((r >= 185 && r <= 235) && (g >= 115 && g <= 165) && (b >= 135 && b <= 185)) {
-					pixelData[i][k] = 14;
-				} else if((r >= 50 && r <= 100) && (g >= 25 && g <= 75) && (b >= 5 && b <= 5)) {
-					pixelData[i][k] = 15;
-				} else {
-					pixelData[i][k] = -1;
+					pixelData[i][k] = 3;
 				}
 			}
 		}
 		
-		return pixelData;
+		return null;
 	}
 	
 	public BufferedImage resizeImage(BufferedImage img, int newWidth, int newHeight) {
