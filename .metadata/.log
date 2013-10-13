@@ -1493,3 +1493,330 @@ com.sun.jdi.connect.spi.ClosedConnectionException
 	at org.eclipse.jdi.internal.connect.SocketTransportService.access$7(SocketTransportService.java:212)
 	at org.eclipse.jdi.internal.connect.SocketTransportService$3.run(SocketTransportService.java:183)
 	at java.lang.Thread.run(Thread.java:722)
+
+!ENTRY org.eclipse.jdt.launching 4 113 2013-10-12 23:32:28.784
+!MESSAGE Failed to connect to remote VM. Connection timed out.
+!STACK 0
+org.eclipse.jdi.TimeoutException
+	at org.eclipse.jdi.internal.connect.SocketTransportService.attach(SocketTransportService.java:162)
+	at org.eclipse.jdi.internal.connect.SocketTransportImpl.attach(SocketTransportImpl.java:45)
+	at org.eclipse.jdi.internal.connect.SocketAttachingConnectorImpl.attach(SocketAttachingConnectorImpl.java:134)
+	at org.eclipse.jdt.internal.launching.SocketAttachConnector.connect(SocketAttachConnector.java:141)
+	at org.eclipse.jdt.internal.launching.JavaRemoteApplicationLaunchConfigurationDelegate.launch(JavaRemoteApplicationLaunchConfigurationDelegate.java:84)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.jdt.launching 4 113 2013-10-12 23:32:58.978
+!MESSAGE Failed to connect to remote VM. Connection timed out.
+!STACK 0
+org.eclipse.jdi.TimeoutException
+	at org.eclipse.jdi.internal.connect.SocketTransportService.attach(SocketTransportService.java:162)
+	at org.eclipse.jdi.internal.connect.SocketTransportImpl.attach(SocketTransportImpl.java:45)
+	at org.eclipse.jdi.internal.connect.SocketAttachingConnectorImpl.attach(SocketAttachingConnectorImpl.java:134)
+	at org.eclipse.jdt.internal.launching.SocketAttachConnector.connect(SocketAttachConnector.java:141)
+	at org.eclipse.jdt.internal.launching.JavaRemoteApplicationLaunchConfigurationDelegate.launch(JavaRemoteApplicationLaunchConfigurationDelegate.java:84)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.jdt.launching 4 113 2013-10-12 23:33:24.215
+!MESSAGE Failed to connect to remote VM. Connection timed out.
+!STACK 0
+org.eclipse.jdi.TimeoutException
+	at org.eclipse.jdi.internal.connect.SocketTransportService.attach(SocketTransportService.java:162)
+	at org.eclipse.jdi.internal.connect.SocketTransportImpl.attach(SocketTransportImpl.java:45)
+	at org.eclipse.jdi.internal.connect.SocketAttachingConnectorImpl.attach(SocketAttachingConnectorImpl.java:134)
+	at org.eclipse.jdt.internal.launching.SocketAttachConnector.connect(SocketAttachConnector.java:141)
+	at org.eclipse.jdt.internal.launching.JavaRemoteApplicationLaunchConfigurationDelegate.launch(JavaRemoteApplicationLaunchConfigurationDelegate.java:84)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SESSION 2013-10-12 23:33:30.318 -----------------------------------------------
+eclipse.buildId=4.3.0.M20130911-1000
+java.version=1.7.0_17
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.standard.product -keyring /Users/cfretz/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.standard.product -keyring /Users/cfretz/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2013-10-12 23:33:39.514
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.ui 4 4 2013-10-12 23:33:40.304
+!MESSAGE Unable to find Action Set: adt.actionSet.wizards
+
+!ENTRY org.eclipse.ui 4 4 2013-10-12 23:33:40.305
+!MESSAGE Unable to find Action Set: adt.actionSet.avdManager
+
+!ENTRY org.eclipse.ui 4 4 2013-10-12 23:33:40.306
+!MESSAGE Unable to find Action Set: adt.actionSet.lint
+
+!ENTRY org.eclipse.ui 4 4 2013-10-12 23:33:40.306
+!MESSAGE Unable to find Action Set: adt.actionSet.refactorings
+
+!ENTRY org.eclipse.jdt.launching 4 113 2013-10-12 23:34:16.227
+!MESSAGE Failed to connect to remote VM. Connection timed out.
+!STACK 0
+org.eclipse.jdi.TimeoutException
+	at org.eclipse.jdi.internal.connect.SocketTransportService.attach(SocketTransportService.java:162)
+	at org.eclipse.jdi.internal.connect.SocketTransportImpl.attach(SocketTransportImpl.java:45)
+	at org.eclipse.jdi.internal.connect.SocketAttachingConnectorImpl.attach(SocketAttachingConnectorImpl.java:134)
+	at org.eclipse.jdt.internal.launching.SocketAttachConnector.connect(SocketAttachConnector.java:141)
+	at org.eclipse.jdt.internal.launching.JavaRemoteApplicationLaunchConfigurationDelegate.launch(JavaRemoteApplicationLaunchConfigurationDelegate.java:84)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.jdt.launching 4 113 2013-10-12 23:34:42.837
+!MESSAGE Failed to connect to remote VM. Connection timed out.
+!STACK 0
+org.eclipse.jdi.TimeoutException
+	at org.eclipse.jdi.internal.connect.SocketTransportService.attach(SocketTransportService.java:162)
+	at org.eclipse.jdi.internal.connect.SocketTransportImpl.attach(SocketTransportImpl.java:45)
+	at org.eclipse.jdi.internal.connect.SocketAttachingConnectorImpl.attach(SocketAttachingConnectorImpl.java:134)
+	at org.eclipse.jdt.internal.launching.SocketAttachConnector.connect(SocketAttachConnector.java:141)
+	at org.eclipse.jdt.internal.launching.JavaRemoteApplicationLaunchConfigurationDelegate.launch(JavaRemoteApplicationLaunchConfigurationDelegate.java:84)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.jdt.launching 4 113 2013-10-12 23:36:01.822
+!MESSAGE Failed to connect to remote VM. Connection timed out.
+!STACK 0
+org.eclipse.jdi.TimeoutException
+	at org.eclipse.jdi.internal.connect.SocketTransportService.attach(SocketTransportService.java:162)
+	at org.eclipse.jdi.internal.connect.SocketTransportImpl.attach(SocketTransportImpl.java:45)
+	at org.eclipse.jdi.internal.connect.SocketAttachingConnectorImpl.attach(SocketAttachingConnectorImpl.java:134)
+	at org.eclipse.jdt.internal.launching.SocketAttachConnector.connect(SocketAttachConnector.java:141)
+	at org.eclipse.jdt.internal.launching.JavaRemoteApplicationLaunchConfigurationDelegate.launch(JavaRemoteApplicationLaunchConfigurationDelegate.java:84)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SESSION 2013-10-12 23:38:57.682 -----------------------------------------------
+eclipse.buildId=4.3.0.M20130911-1000
+java.version=1.7.0_17
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.standard.product -keyring /Users/cfretz/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.standard.product -keyring /Users/cfretz/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2013-10-12 23:39:03.292
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.ui 4 4 2013-10-12 23:39:04.234
+!MESSAGE Unable to find Action Set: adt.actionSet.wizards
+
+!ENTRY org.eclipse.ui 4 4 2013-10-12 23:39:04.234
+!MESSAGE Unable to find Action Set: adt.actionSet.avdManager
+
+!ENTRY org.eclipse.ui 4 4 2013-10-12 23:39:04.234
+!MESSAGE Unable to find Action Set: adt.actionSet.lint
+
+!ENTRY org.eclipse.ui 4 4 2013-10-12 23:39:04.235
+!MESSAGE Unable to find Action Set: adt.actionSet.refactorings
+
+!ENTRY org.eclipse.jdt.launching 4 113 2013-10-12 23:41:13.147
+!MESSAGE Failed to connect to remote VM. Connection timed out.
+!STACK 0
+org.eclipse.jdi.TimeoutException
+	at org.eclipse.jdi.internal.connect.SocketTransportService.attach(SocketTransportService.java:162)
+	at org.eclipse.jdi.internal.connect.SocketTransportImpl.attach(SocketTransportImpl.java:45)
+	at org.eclipse.jdi.internal.connect.SocketAttachingConnectorImpl.attach(SocketAttachingConnectorImpl.java:134)
+	at org.eclipse.jdt.internal.launching.SocketAttachConnector.connect(SocketAttachConnector.java:141)
+	at org.eclipse.jdt.internal.launching.JavaRemoteApplicationLaunchConfigurationDelegate.launch(JavaRemoteApplicationLaunchConfigurationDelegate.java:84)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.jdt.launching 4 113 2013-10-12 23:42:12.735
+!MESSAGE Failed to connect to remote VM. Connection timed out.
+!STACK 0
+org.eclipse.jdi.TimeoutException
+	at org.eclipse.jdi.internal.connect.SocketTransportService.attach(SocketTransportService.java:162)
+	at org.eclipse.jdi.internal.connect.SocketTransportImpl.attach(SocketTransportImpl.java:45)
+	at org.eclipse.jdi.internal.connect.SocketAttachingConnectorImpl.attach(SocketAttachingConnectorImpl.java:134)
+	at org.eclipse.jdt.internal.launching.SocketAttachConnector.connect(SocketAttachConnector.java:141)
+	at org.eclipse.jdt.internal.launching.JavaRemoteApplicationLaunchConfigurationDelegate.launch(JavaRemoteApplicationLaunchConfigurationDelegate.java:84)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.jdt.launching 4 113 2013-10-12 23:44:47.696
+!MESSAGE Failed to connect to remote VM. Connection timed out.
+!STACK 0
+org.eclipse.jdi.TimeoutException
+	at org.eclipse.jdi.internal.connect.SocketTransportService.attach(SocketTransportService.java:162)
+	at org.eclipse.jdi.internal.connect.SocketTransportImpl.attach(SocketTransportImpl.java:45)
+	at org.eclipse.jdi.internal.connect.SocketAttachingConnectorImpl.attach(SocketAttachingConnectorImpl.java:134)
+	at org.eclipse.jdt.internal.launching.SocketAttachConnector.connect(SocketAttachConnector.java:141)
+	at org.eclipse.jdt.internal.launching.JavaRemoteApplicationLaunchConfigurationDelegate.launch(JavaRemoteApplicationLaunchConfigurationDelegate.java:84)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SESSION 2013-10-12 23:47:23.374 -----------------------------------------------
+eclipse.buildId=4.3.0.M20130911-1000
+java.version=1.7.0_17
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.standard.product -keyring /Users/cfretz/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.standard.product -keyring /Users/cfretz/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2013-10-12 23:47:28.719
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.ui 4 4 2013-10-12 23:47:29.834
+!MESSAGE Unable to find Action Set: adt.actionSet.wizards
+
+!ENTRY org.eclipse.ui 4 4 2013-10-12 23:47:29.834
+!MESSAGE Unable to find Action Set: adt.actionSet.avdManager
+
+!ENTRY org.eclipse.ui 4 4 2013-10-12 23:47:29.835
+!MESSAGE Unable to find Action Set: adt.actionSet.lint
+
+!ENTRY org.eclipse.ui 4 4 2013-10-12 23:47:29.835
+!MESSAGE Unable to find Action Set: adt.actionSet.refactorings
+!SESSION 2013-10-13 01:19:35.425 -----------------------------------------------
+eclipse.buildId=4.3.0.M20130911-1000
+java.version=1.7.0_17
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.standard.product -keyring /Users/cfretz/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.standard.product -keyring /Users/cfretz/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2013-10-13 01:19:39.627
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.ui 4 4 2013-10-13 01:19:40.361
+!MESSAGE Unable to find Action Set: adt.actionSet.wizards
+
+!ENTRY org.eclipse.ui 4 4 2013-10-13 01:19:40.361
+!MESSAGE Unable to find Action Set: adt.actionSet.avdManager
+
+!ENTRY org.eclipse.ui 4 4 2013-10-13 01:19:40.363
+!MESSAGE Unable to find Action Set: adt.actionSet.lint
+
+!ENTRY org.eclipse.ui 4 4 2013-10-13 01:19:40.363
+!MESSAGE Unable to find Action Set: adt.actionSet.refactorings
+
+!ENTRY org.eclipse.jdt.launching 4 113 2013-10-13 01:20:38.365
+!MESSAGE Failed to connect to remote VM. Connection timed out.
+!STACK 0
+org.eclipse.jdi.TimeoutException
+	at org.eclipse.jdi.internal.connect.SocketTransportService.attach(SocketTransportService.java:162)
+	at org.eclipse.jdi.internal.connect.SocketTransportImpl.attach(SocketTransportImpl.java:45)
+	at org.eclipse.jdi.internal.connect.SocketAttachingConnectorImpl.attach(SocketAttachingConnectorImpl.java:134)
+	at org.eclipse.jdt.internal.launching.SocketAttachConnector.connect(SocketAttachConnector.java:141)
+	at org.eclipse.jdt.internal.launching.JavaRemoteApplicationLaunchConfigurationDelegate.launch(JavaRemoteApplicationLaunchConfigurationDelegate.java:84)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.jdt.launching 4 113 2013-10-13 01:21:21.511
+!MESSAGE Failed to connect to remote VM. Connection timed out.
+!STACK 0
+org.eclipse.jdi.TimeoutException
+	at org.eclipse.jdi.internal.connect.SocketTransportService.attach(SocketTransportService.java:162)
+	at org.eclipse.jdi.internal.connect.SocketTransportImpl.attach(SocketTransportImpl.java:45)
+	at org.eclipse.jdi.internal.connect.SocketAttachingConnectorImpl.attach(SocketAttachingConnectorImpl.java:134)
+	at org.eclipse.jdt.internal.launching.SocketAttachConnector.connect(SocketAttachConnector.java:141)
+	at org.eclipse.jdt.internal.launching.JavaRemoteApplicationLaunchConfigurationDelegate.launch(JavaRemoteApplicationLaunchConfigurationDelegate.java:84)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.jdt.launching 4 113 2013-10-13 01:22:49.025
+!MESSAGE Failed to connect to remote VM. Connection timed out.
+!STACK 0
+org.eclipse.jdi.TimeoutException
+	at org.eclipse.jdi.internal.connect.SocketTransportService.attach(SocketTransportService.java:162)
+	at org.eclipse.jdi.internal.connect.SocketTransportImpl.attach(SocketTransportImpl.java:45)
+	at org.eclipse.jdi.internal.connect.SocketAttachingConnectorImpl.attach(SocketAttachingConnectorImpl.java:134)
+	at org.eclipse.jdt.internal.launching.SocketAttachConnector.connect(SocketAttachConnector.java:141)
+	at org.eclipse.jdt.internal.launching.JavaRemoteApplicationLaunchConfigurationDelegate.launch(JavaRemoteApplicationLaunchConfigurationDelegate.java:84)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SESSION 2013-10-13 01:23:29.770 -----------------------------------------------
+eclipse.buildId=4.3.0.M20130911-1000
+java.version=1.7.0_17
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.standard.product -keyring /Users/cfretz/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.standard.product -keyring /Users/cfretz/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2013-10-13 01:23:34.039
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.ui 4 4 2013-10-13 01:23:34.769
+!MESSAGE Unable to find Action Set: adt.actionSet.wizards
+
+!ENTRY org.eclipse.ui 4 4 2013-10-13 01:23:34.769
+!MESSAGE Unable to find Action Set: adt.actionSet.avdManager
+
+!ENTRY org.eclipse.ui 4 4 2013-10-13 01:23:34.771
+!MESSAGE Unable to find Action Set: adt.actionSet.lint
+
+!ENTRY org.eclipse.ui 4 4 2013-10-13 01:23:34.771
+!MESSAGE Unable to find Action Set: adt.actionSet.refactorings
+
+!ENTRY org.eclipse.jdt.launching 4 113 2013-10-13 01:24:20.513
+!MESSAGE Failed to connect to remote VM. Connection timed out.
+!STACK 0
+org.eclipse.jdi.TimeoutException
+	at org.eclipse.jdi.internal.connect.SocketTransportService.attach(SocketTransportService.java:162)
+	at org.eclipse.jdi.internal.connect.SocketTransportImpl.attach(SocketTransportImpl.java:45)
+	at org.eclipse.jdi.internal.connect.SocketAttachingConnectorImpl.attach(SocketAttachingConnectorImpl.java:134)
+	at org.eclipse.jdt.internal.launching.SocketAttachConnector.connect(SocketAttachConnector.java:141)
+	at org.eclipse.jdt.internal.launching.JavaRemoteApplicationLaunchConfigurationDelegate.launch(JavaRemoteApplicationLaunchConfigurationDelegate.java:84)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SESSION 2013-10-13 01:25:51.221 -----------------------------------------------
+eclipse.buildId=4.3.0.M20130911-1000
+java.version=1.7.0_17
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.standard.product -keyring /Users/cfretz/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.standard.product -keyring /Users/cfretz/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2013-10-13 01:25:55.424
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.ui 4 4 2013-10-13 01:25:56.126
+!MESSAGE Unable to find Action Set: adt.actionSet.wizards
+
+!ENTRY org.eclipse.ui 4 4 2013-10-13 01:25:56.126
+!MESSAGE Unable to find Action Set: adt.actionSet.avdManager
+
+!ENTRY org.eclipse.ui 4 4 2013-10-13 01:25:56.127
+!MESSAGE Unable to find Action Set: adt.actionSet.lint
+
+!ENTRY org.eclipse.ui 4 4 2013-10-13 01:25:56.128
+!MESSAGE Unable to find Action Set: adt.actionSet.refactorings

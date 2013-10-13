@@ -3,4 +3,10 @@
 <fullyQualifiedTypeName name="org.bukkit.command.Command"/>
 <fullyQualifiedTypeName name="javax.imageio.ImageIO"/>
 <fullyQualifiedTypeName name="java.awt.Color"/>
+<fullyQualifiedTypeName name="java.io.InputStream"/>
+<fullyQualifiedTypeName name="org.bukkit.Location"/>
+<fullyQualifiedTypeName name="org.bukkit.World"/>
+<fullyQualifiedTypeName name="org.bukkit.BlockChangeDelegate"/>
+<fullyQualifiedTypeName name="org.bukkit.block.BlockState"/>
+<fullyQualifiedTypeName name="org.bukkit.Material"/>
 </qualifiedTypeNameHistroy>
